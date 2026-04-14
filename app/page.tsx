@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Wage Garnishment Laws by State 2026 — Free Checker Tool',
     description:
-      'Check your state\'s wage garnishment rules for medical debt, credit cards, and personal loans. Free, instant, no signup required.',
+      "Check your state's wage garnishment rules for medical debt, credit cards, and personal loans. Free, instant, no signup required.",
     url: 'https://www.wagegarnishmentlaws.com/',
   },
   twitter: {
     title: 'Wage Garnishment Laws by State 2026',
-    description: 'Check your state\'s wage garnishment rules instantly — free, no signup.',
+    description: "Check your state's wage garnishment rules instantly — free, no signup.",
   },
 };
 
@@ -75,52 +75,45 @@ export default function HomePage() {
       <Nav />
       <div id="ezoic-pub-ad-placeholder-101" />
       <main>
-        {/* HERO */}
-        <section className="relative bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 text-white overflow-hidden">
-          <div
-            className="absolute inset-0 opacity-[0.06]"
-            style={{
-              backgroundImage: 'radial-gradient(circle,#fff 1px,transparent 1px)',
-              backgroundSize: '28px 28px',
-            }}
-          />
-          <div className="relative max-w-5xl mx-auto px-4 sm:px-6 pt-20 pb-24 sm:pt-28 sm:pb-32 text-center">
-            <div className="inline-flex items-center gap-2 bg-blue-500/20 border border-blue-400/30 rounded-full px-4 py-1.5 text-blue-300 text-sm font-medium mb-7">
-              <svg className="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+
+        {/* ── HERO ── */}
+        <section className="bg-white pt-16 pb-12 sm:pt-24 sm:pb-16">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+            <div className="inline-flex items-center gap-2 bg-teal-50 border border-teal-100 rounded-full px-4 py-1.5 text-teal-700 text-sm font-medium mb-8">
+              <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              Free · Instant · No signup · All 50 states
+              Free · Instant · No signup required
             </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
-              See If Your Wages<br />
-              <span className="text-blue-400">Are at Risk</span>
+
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight mb-5">
+              Are Your Wages at Risk<br className="hidden sm:block" /> of Garnishment?
             </h1>
-            <p className="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
-              Medical bills, credit cards, personal loans — find out exactly what creditors can do in your
-              state, how long they have to sue, and what protections you have. In under a minute.
+
+            <p className="text-lg sm:text-xl text-slate-500 max-w-2xl mx-auto mb-10 leading-relaxed">
+              Medical bills, credit cards, personal loans — find out exactly what creditors
+              can do in your state and what protections you have. Takes under a minute.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <a
-                href="#checker"
-                className="inline-flex items-center justify-center gap-2 bg-blue-500 hover:bg-blue-400 text-white font-bold px-8 py-4 rounded-xl text-lg transition shadow-xl shadow-blue-900/40"
-              >
-                Check My State Now
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </a>
-              <a
-                href="#learn"
-                className="inline-flex items-center justify-center bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold px-8 py-4 rounded-xl text-lg transition"
-              >
-                How It Works
-              </a>
-            </div>
-            <div className="mt-14 flex flex-wrap justify-center gap-x-8 gap-y-3 text-slate-400 text-sm">
-              {['All 50 States + D.C.', 'No Data Collected', 'Runs in Your Browser'].map((s) => (
+
+            <a
+              href="#checker"
+              className="inline-flex items-center justify-center gap-2 bg-teal-600 hover:bg-teal-700 text-white font-semibold px-8 py-4 rounded-xl text-base transition shadow-sm shadow-teal-200"
+            >
+              Check My State Now
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </a>
+
+            <div className="mt-10 flex flex-wrap justify-center gap-x-8 gap-y-3 text-slate-400 text-sm">
+              {[
+                'All 50 states + D.C.',
+                'No data collected',
+                'Runs in your browser',
+              ].map((s) => (
                 <div key={s} className="flex items-center gap-2">
-                  <svg className="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  <svg className="w-3.5 h-3.5 text-teal-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                   {s}
                 </div>
@@ -129,71 +122,98 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* STATS BAR */}
-        <section className="bg-blue-600 text-white py-10">
+        {/* ── TRUST STATS ── */}
+        <section className="bg-slate-50 border-y border-slate-200 py-10">
           <div className="max-w-5xl mx-auto px-4 sm:px-6">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-              <div><div className="text-3xl font-extrabold">$88B+</div><div className="text-blue-200 text-sm mt-1">Medical debt held by Americans</div></div>
-              <div><div className="text-3xl font-extrabold">4 States</div><div className="text-blue-200 text-sm mt-1">Ban consumer wage garnishment</div></div>
-              <div><div className="text-3xl font-extrabold">3–6 yrs</div><div className="text-blue-200 text-sm mt-1">Typical statute of limitations</div></div>
-              <div><div className="text-3xl font-extrabold">25%</div><div className="text-blue-200 text-sm mt-1">Federal garnishment cap</div></div>
+              {[
+                { stat: '$88B+', label: 'Medical debt held by Americans' },
+                { stat: '4 States', label: 'Fully ban consumer wage garnishment' },
+                { stat: '3–6 yrs', label: 'Typical statute of limitations' },
+                { stat: '25%', label: 'Federal garnishment cap' },
+              ].map(({ stat, label }) => (
+                <div key={stat}>
+                  <div className="text-2xl sm:text-3xl font-extrabold text-slate-800">{stat}</div>
+                  <div className="text-slate-500 text-xs sm:text-sm mt-1 leading-tight">{label}</div>
+                </div>
+              ))}
             </div>
           </div>
         </section>
 
-        {/* WHAT IS GARNISHMENT */}
+        {/* ── HOW IT WORKS ── */}
         <section id="learn" className="py-16 sm:py-24 bg-white">
           <div className="max-w-5xl mx-auto px-4 sm:px-6">
             <div className="text-center mb-14">
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4">What Is Wage Garnishment?</h2>
-              <p className="text-lg text-gray-500 max-w-2xl mx-auto">
-                Understanding the process helps you know what to expect — and what options you have.
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">
+                How Wage Garnishment Works
+              </h2>
+              <p className="text-slate-500 text-lg max-w-2xl mx-auto">
+                Understanding the process helps you know what to expect — and when to act.
               </p>
             </div>
+
             <div className="grid md:grid-cols-2 gap-12 items-start">
-              <div className="space-y-5 text-gray-600 leading-relaxed text-base">
+              <div className="space-y-5 text-slate-600 leading-relaxed">
                 <p>
-                  Wage garnishment is a legal process where a creditor instructs your employer to withhold a
-                  portion of your paycheck and send it directly to them — but only after winning a court
-                  judgment against you.
+                  Wage garnishment is a legal process where a creditor instructs your employer to
+                  withhold a portion of your paycheck and send it directly to them — but only after
+                  winning a court judgment against you.
                 </p>
                 <p>
                   For most private consumer debts — including{' '}
-                  <strong className="text-gray-800">medical bills, credit cards, and personal loans</strong> —
-                  creditors must sue first. You'll receive a summons and have a window to respond before any
-                  judgment can be entered.
+                  <strong className="text-slate-800">medical bills, credit cards, and personal loans</strong> —
+                  creditors must sue first. You'll receive a summons and have a window to respond
+                  before any judgment can be entered.
                 </p>
                 <p>
                   Federal law caps garnishment at{' '}
-                  <strong className="text-gray-800">25% of disposable income</strong> or the amount over 30× the
-                  federal minimum wage, whichever is less. Many states set lower caps, and four states ban it
-                  entirely for consumer debt.
+                  <strong className="text-slate-800">25% of disposable income</strong> or the amount
+                  over 30× the federal minimum wage, whichever is less. Many states set lower caps,
+                  and four states ban it entirely for consumer debt.
                 </p>
                 <p>
-                  Knowing your state's rules lets you negotiate more effectively, respond to lawsuits in time,
-                  or seek legal help before things escalate.
+                  Knowing your state's rules lets you negotiate more effectively, respond to lawsuits
+                  in time, or seek legal help before things escalate.
                 </p>
-                <div className="pt-2 flex flex-wrap gap-3">
-                  <Link href="/faq" className="text-blue-600 hover:text-blue-700 font-semibold text-sm">
+                <div className="flex flex-wrap gap-4 pt-1">
+                  <Link href="/faq" className="text-teal-600 hover:text-teal-700 font-semibold text-sm">
                     Common Questions →
                   </Link>
-                  <Link href="/blog" className="text-blue-600 hover:text-blue-700 font-semibold text-sm">
+                  <Link href="/blog" className="text-teal-600 hover:text-teal-700 font-semibold text-sm">
                     Read Our Guides →
                   </Link>
                 </div>
               </div>
-              <ol className="space-y-4">
+
+              <ol className="space-y-3">
                 {[
-                  { n: '01', h: 'Creditor files a lawsuit', p: 'Creditor sues in civil court. You are served and typically have 20–30 days to respond.' },
-                  { n: '02', h: 'Judgment is entered', p: 'If you don\'t respond or lose, the court enters a judgment against you. Judgments can often be renewed.' },
-                  { n: '03', h: 'Garnishment order issued', p: 'Creditor applies for a garnishment order. Your employer is legally required to comply.' },
-                  { n: '04', h: 'Wages withheld each pay period', p: 'A percentage of each paycheck is sent to the creditor until the debt is paid in full.' },
+                  {
+                    n: '01',
+                    h: 'Creditor files a lawsuit',
+                    p: 'Creditor sues in civil court. You are served and typically have 20–30 days to respond.',
+                  },
+                  {
+                    n: '02',
+                    h: 'Judgment is entered',
+                    p: "If you don't respond or lose, the court enters a judgment against you. Judgments can often be renewed.",
+                  },
+                  {
+                    n: '03',
+                    h: 'Garnishment order issued',
+                    p: 'Creditor applies for a garnishment order. Your employer is legally required to comply.',
+                  },
+                  {
+                    n: '04',
+                    h: 'Wages withheld each pay period',
+                    p: 'A percentage of each paycheck is sent to the creditor until the debt is paid in full.',
+                  },
                 ].map((step) => (
-                  <li key={step.n} className="bg-slate-50 rounded-2xl p-5 border border-slate-100 flex gap-4">
-                    <span className="text-2xl font-extrabold text-blue-200 leading-none flex-shrink-0">{step.n}</span>
+                  <li key={step.n} className="bg-slate-50 rounded-xl p-5 border border-slate-100 flex gap-4">
+                    <span className="text-xl font-extrabold text-teal-200 leading-none flex-shrink-0 mt-0.5">{step.n}</span>
                     <div>
-                      <h3 className="font-bold text-gray-900 mb-1">{step.h}</h3>
-                      <p className="text-sm text-gray-500">{step.p}</p>
+                      <h3 className="font-bold text-slate-900 mb-1 text-sm">{step.h}</h3>
+                      <p className="text-sm text-slate-500 leading-relaxed">{step.p}</p>
                     </div>
                   </li>
                 ))}
@@ -202,48 +222,45 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* CHECKER TOOL (client component) */}
+        {/* ── CHECKER TOOL ── */}
         <GarnishmentChecker />
 
         <div id="ezoic-pub-ad-placeholder-102" />
 
-        {/* FAQ PREVIEW */}
-        <section id="faq" className="py-16 sm:py-24 bg-white">
-          <div className="max-w-3xl mx-auto px-4 sm:px-6">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-3">
-                Frequently Asked Questions
-              </h2>
-              <p className="text-gray-500 text-base">
-                Common questions about debt collection, lawsuits, and wage garnishment law.
-              </p>
-            </div>
-            <div className="text-center mt-4">
-              <Link
-                href="/faq"
-                className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold"
-              >
-                View all questions on the FAQ page →
-              </Link>
-            </div>
+        {/* ── FAQ PREVIEW ── */}
+        <section className="py-16 sm:py-20 bg-white">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-3">
+              Have more questions?
+            </h2>
+            <p className="text-slate-500 text-base mb-6">
+              We've answered the most common questions about debt collection, lawsuits, and garnishment law.
+            </p>
+            <Link
+              href="/faq"
+              className="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white font-semibold px-6 py-3 rounded-xl text-sm transition"
+            >
+              View all FAQs →
+            </Link>
           </div>
         </section>
 
-        {/* CTA */}
-        <section className="bg-gradient-to-br from-slate-900 to-blue-950 text-white py-16 sm:py-24">
+        {/* ── EXPERT CTA ── */}
+        <section className="bg-teal-700 text-white py-14 sm:py-20">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-            <div className="text-5xl mb-5">⚖️</div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold mb-4">Still Unsure About Your Situation?</h2>
-            <p className="text-slate-300 text-lg mb-10 max-w-xl mx-auto leading-relaxed">
-              This tool is a starting point, not a final answer. A consumer law attorney can review your
-              specific case — many offer free initial consultations.
+            <h2 className="text-2xl sm:text-3xl font-extrabold mb-3">
+              Still unsure about your situation?
+            </h2>
+            <p className="text-teal-100 text-base mb-8 max-w-xl mx-auto leading-relaxed">
+              This tool is a starting point, not a final answer. A consumer law attorney can
+              review your specific case — many offer free initial consultations.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
                 href="https://www.lawhelp.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-white text-gray-900 font-bold px-7 py-4 rounded-xl hover:bg-gray-100 transition shadow-lg"
+                className="inline-flex items-center justify-center gap-2 bg-white text-teal-800 font-bold px-7 py-3.5 rounded-xl hover:bg-teal-50 transition"
               >
                 Find Free Legal Help ↗
               </a>
@@ -251,19 +268,20 @@ export default function HomePage() {
                 href="https://www.consumerfinance.gov/consumer-tools/debt-collection/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-white/10 border border-white/20 hover:bg-white/20 text-white font-semibold px-7 py-4 rounded-xl transition"
+                className="inline-flex items-center justify-center gap-2 bg-teal-600 hover:bg-teal-500 border border-teal-500 text-white font-semibold px-7 py-3.5 rounded-xl transition"
               >
                 CFPB Debt Resources ↗
               </a>
             </div>
           </div>
         </section>
+
       </main>
 
       <div id="ezoic-pub-ad-placeholder-103" />
       <script
         dangerouslySetInnerHTML={{
-          __html: "ezstandalone.cmd.push(function(){ezstandalone.showAds(101,102,103);});",
+          __html: 'ezstandalone.cmd.push(function(){ezstandalone.showAds(101,102,103);});',
         }}
       />
       <Footer />
